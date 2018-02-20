@@ -3,9 +3,9 @@ Actually only three of my dotNet-projects are listed here. </br>
 The two of them are used in the daylight. The others are not deployed yet. </br>
 However I work hard to finish the PCB-merger.
 
-- the MDI Viewer
-- the Stack-up viewer (myDataSet2)
-- the PCB Merger
+- [the MDI Viewer](https://github.com/pszyjaciel/Projects/tree/master/myMDI2)
+- [the Stack-up viewer (myDataSet2)](https://github.com/pszyjaciel/Projects/tree/master/myDataSet2)
+- [the PCB Merger](https://github.com/pszyjaciel/Projects/tree/master/csForm2i)
 
 ### Technology
 - The MDI Viewer is pure dotNet project based on Windows Forms 
@@ -19,3 +19,6 @@ and a c++ DLL library. </br></br>
 
 
 07:38 20-02-2018
+
+
+
