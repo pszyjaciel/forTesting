@@ -11,11 +11,11 @@ However I work hard to finish the PCB-merger.
 - The MDI Viewer is pure dotNet project based on Windows Forms 
 with network functionality. </br>
 
-- The core of the Stack-up viewer is the Oracle client fetching the data from 
-an Oracle v8.1 database and displaying it in a Windows Forms GUI. < /br>
+- The core of the Stack-up viewer is the <b>Oracle client</b> fetching the data from 
+an Oracle v8.1 database and displaying it in a Windows Forms GUI. </br>
 
-- The PCB Merger is a combination of two projects: a .Net GUI display and editor
-and a c++ DLL library.
+- The PCB Merger is a combination of <b>two projects</b>: a .Net GUI display and editor
+and a c++ DLL library. </br></br>
 
 
 07:38 20-02-2018
