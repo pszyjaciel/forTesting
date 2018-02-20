@@ -1,5 +1,21 @@
-# forTesting
+### Projects
+Actually only three of my dotNet-projects are listed here. </br>
+The two of them are used in the daylight. The others are not deployed yet. </br>
+However I work hard to finish the PCB-merger.
 
-> this repository is only for testing purposes
+- the MDI Viewer
+- the Stack-up viewer (myDataSet2)
+- the PCB Merger
 
-10:51 10-02-2018
+### Technology
+- The MDI Viewer is pure dotNet project based on Windows Forms 
+with network functionality. </br>
+
+- The core of the Stack-up viewer is the Oracle client fetching the data from 
+an Oracle v8.1 database and displaying it in a Windows Forms GUI. < /br>
+
+- The PCB Merger is a combination of two projects: a .Net GUI display and editor
+and a c++ DLL library.
+
+
+07:38 20-02-2018
