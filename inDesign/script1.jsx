@@ -1,5 +1,6 @@
-﻿// 14:55 30.11.2018
-// ustaw target application na inDesign
+﻿// ustaw target application na inDesign
+// http://cssdk.s3-website-us-east-1.amazonaws.com/sdk/2.1/docs/WebHelp/references/csawlib/com/adobe/indesign/package-detail.html
+// http://jongware.mit.edu/idcsjs5.5/pc_DataMergeOption.html
 
 function showProperties(myObject) {
     for (var property in myObject) {
@@ -26,7 +27,7 @@ var myDollarProperties = $.reflect.properties;
 // decimalPoint,memCache,appEncoding,screens,os,fileName,line,hiresTimer,dictionary,
 // engineName,includePath,__proto__
 
-showProperties(myDollarProperties);
+// showProperties(myDollarProperties);
 
 
 //~ $.writeln($.error);
@@ -48,6 +49,54 @@ showProperties(myDollarProperties);
 //~ $.writeln('line: ' + $.line);
 //~ $.writeln('hiresTimer: ' + $.hiresTimer);
 //~ $.writeln('dictionary: ' + $.dictionary);
+
+
+var myactiveDocumentProperties = app.activeDocument.reflect.properties;
+//showProperties(myactiveDocumentProperties);
+
+var myactiveDocumentMethods = app.activeDocument.reflect.methods;
+//showProperties(myactiveDocumentMethods);
+
+var myProperties = app.reflect.properties;
+//showProperties(myProperties);
+
+var myAppMethods = app.reflect.methods;
+//showProperties(myAppMethods);
+
+//var myActiveScriptProperties = app.activeScript.reflect.properties;
+//showProperties(myActiveScriptProperties);
+
+//var myActiveScriptMethods = app.activeScript.reflect.methods;
+//showProperties(myActiveScriptMethods);
+
+var myActiveWindowProperties = app.activeWindow.reflect.properties;
+//showProperties(myActiveWindowProperties);
+
+var myActiveWindowMethods = app.activeWindow.reflect.methods;
+//showProperties(myActiveWindowMethods);
+
+var myUserNameProperties = app.userName.reflect.properties;
+//showProperties(myUserNameProperties);
+
+var myUserNameMethods = app.userName.reflect.methods;
+//showProperties(myUserNameMethods);
+
+
+//var myDocument = new Document('maj_dokjument');
+//var myUserNameMethods = myDocument.dataMergeTextPlaceholders.reflect.methods;
+
+var myDocumentProperties = Document.reflect.properties;
+//showProperties(myDocumentProperties);
+
+var myDocumentMethods = Document.reflect.methods;
+//showProperties(myDocumentMethods);
+
+var myApplicationProperties = Application.reflect.properties;
+//showProperties(myApplicationProperties);
+
+var myApplicationMethods = Application.reflect.methods;
+showProperties(myApplicationMethods);
+
 
 // dataMergeOptions jest propertisem w app
 var mydataMergeOptionsProperties = app.dataMergeOptions.reflect.properties;
@@ -120,6 +169,23 @@ var mydataMergePropertiesMethods = app.activeDocument.dataMergeProperties.reflec
 //~ toSource,getElements,toSpecifier,addEventListener,removeEventListener,==,===,
 //~ toSource,getElements,toSpecifier
 
+//~ Element of  DataMergeImagePlaceholder.field
+//~ DataMergeTextPlaceholder.field
+
+var dm = new DataMerge();
+var myPreferences = dm.reflect.properties;
+//$.writeln(myPreferences);
+
+var myMethods = dm.reflect.methods;
+//$.writeln(myMethods);
+
+var dmf = new DataMergeField();
+var myPreferences = dmf.reflect.properties;
+//$.writeln(myPreferences);
+
+var myMethods = dmf.reflect.methods;
+//$.writeln(myMethods);
 
 
+//showProperties(myPreference);
 
