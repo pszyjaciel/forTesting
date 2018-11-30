@@ -5,7 +5,6 @@ function showProperties(myObject) {
     for (var property in myObject) {
         if (!myObject.hasOwnProperty(property)) continue;
         $.writeln(myObject[property]);
-        
     }
 }
 
