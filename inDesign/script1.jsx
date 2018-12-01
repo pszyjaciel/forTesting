@@ -1,6 +1,8 @@
 ﻿// ustaw target application na inDesign
 // http://cssdk.s3-website-us-east-1.amazonaws.com/sdk/2.1/docs/WebHelp/references/csawlib/com/adobe/indesign/package-detail.html
 // http://jongware.mit.edu/idcsjs5.5/pc_DataMergeOption.html
+// http://jongware.mit.edu/idcsjs5.5/inxx.html
+// http://cssdk.s3-website-us-east-1.amazonaws.com/sdk/2.1/docs/WebHelp/references/csawlib/
 
 function showProperties(myObject) {
     for (var property in myObject) {
