@@ -28,6 +28,7 @@ myDocument.dataMergeProperties.selectDataSource(myTextFile);
 
 var myDataMergeProperties = myDocument.dataMergeProperties;
 var myStory = myTextFrame.parentStory;
+
 var myStoryOffset = myTextFrame.lines.item(0).insertionPoints.item(-2).index;
 var myNamePlaceHolder = myDocument.dataMergeTextPlaceholders.add(myStory,
 		myStoryOffset, myDataMergeProperties.dataMergeFields.item(0));
