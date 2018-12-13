@@ -22,14 +22,11 @@ try {
 	// $.writeln(app.activeDocument.DataMerge.reflect.properties); // wywala
 
 	var dataMergePropertiesProp = app.activeDocument.dataMergeProperties.reflect.properties;
-	// ~
 	// dataMergePreferences,isValid,parent,properties,preferences,dataMergeFields,
-	// ~ events,eventListeners,isValid,__proto__
+	// events,eventListeners,isValid,__proto__
 
 	var dataMergePropertiesMeth = app.activeDocument.dataMergeProperties.reflect.methods;
-	// ~
 	// selectDataSource,updateDataSource,removeDataSource,mergeRecords,exportFile,toSource,
-	// ~
 	// getElements,toSpecifier,addEventListener,removeEventListener,==,===,toSource,getElements,toSpecifier
 
 	// getElements - na tym bym sie skupil..
@@ -37,12 +34,10 @@ try {
 	var doc = app.activeDocument;
 
 	var myDataMergeOptionsProps = app.dataMergeOptions.reflect.properties;
-	// ~
 	// fittingOption,centerImage,linkImages,removeBlankLines,createNewDocument,documentSize,
-	// ~ isValid,parent,properties,events,eventListeners,isValid,__proto__
+	// isValid,parent,properties,events,eventListeners,isValid,__proto__
 
 	var myDataMergeOptionsMeths = app.dataMergeOptions.reflect.methods;
-	// ~
 	// toSource,getElements,toSpecifier,addEventListener,removeEventListener,==,===,
 	// showProperties(myDataMergeOptionsMeths);
 
@@ -59,9 +54,8 @@ try {
 	// toSource, toString, valueOf
 
 	var pproperties = app.dataMergeOptions.properties.reflect.properties;
-	// ~
 	// fittingOption,centerImage,linkImages,removeBlankLines,createNewDocument,documentSize,
-	// ~ parent,__proto__,__count__,__class__,reflect
+	// parent,__proto__,__count__,__class__,reflect
 
 	var mproperties = app.dataMergeOptions.properties.reflect.methods;
 	// ~
@@ -108,12 +102,9 @@ exit();
 var myDataMergeFieldsProp = app.activeDocument.dataMergeProperties.dataMergePreferences.reflect.properties;
 // $.writeln(myDataMergeFieldsProp);
 
-$
-		.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordNumber);
-$
-		.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordRange);
-$
-		.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordSelection);
+$.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordNumber);
+$.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordRange);
+$.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordSelection);
 
 var myCount = app.activeDocument.dataMergeProperties.dataMergeFields.count();
 // $.writeln(myCount); // 7 pol w pliku txt
@@ -136,8 +127,7 @@ for (var i = 0; i < props.length; i++) {
 	// $.writeln('this property ' + props[i].name + ' is ' + f[props[i].name]);
 }
 
-var myDataMergeTextPlaceholders_anyItem = app.activeDocument.dataMergeTextPlaceholders
-		.anyItem();
+var myDataMergeTextPlaceholders_anyItem = app.activeDocument.dataMergeTextPlaceholders.anyItem();
 $.writeln(myDataMergeTextPlaceholders_anyItem.length);
 
 var f = myDataMergeTextPlaceholders_anyItem;
