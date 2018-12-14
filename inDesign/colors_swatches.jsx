@@ -22,7 +22,7 @@
         
     // now lets create some colors
     var cols = new Array();
-    var num_of_colors = 12*5;
+    var num_of_colors = 6*5;
     // lets do it randomly
     for(var j = 0; j < num_of_colors; j++){
         var r = Math.random() * 10;
@@ -46,7 +46,7 @@
             name:"color by hand", 
             model:ColorModel.PROCESS,
             space:ColorSpace.RGB,
-            colorValue:[100,10,100]};
+            colorValue:[100, 10, 100]};
         
     // now we apply them
     

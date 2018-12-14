@@ -1,4 +1,4 @@
-﻿// testing for inDesign
+// testing for inDesign
 
 function showProperties(myObject) {
 	for ( var property in myObject) {
@@ -102,9 +102,12 @@ exit();
 var myDataMergeFieldsProp = app.activeDocument.dataMergeProperties.dataMergePreferences.reflect.properties;
 // $.writeln(myDataMergeFieldsProp);
 
-$.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordNumber);
-$.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordRange);
-$.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordSelection);
+$
+		.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordNumber);
+$
+		.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordRange);
+$
+		.writeln(app.activeDocument.dataMergeProperties.dataMergePreferences.recordSelection);
 
 var myCount = app.activeDocument.dataMergeProperties.dataMergeFields.count();
 // $.writeln(myCount); // 7 pol w pliku txt
@@ -127,7 +130,8 @@ for (var i = 0; i < props.length; i++) {
 	// $.writeln('this property ' + props[i].name + ' is ' + f[props[i].name]);
 }
 
-var myDataMergeTextPlaceholders_anyItem = app.activeDocument.dataMergeTextPlaceholders.anyItem();
+var myDataMergeTextPlaceholders_anyItem = app.activeDocument.dataMergeTextPlaceholders
+		.anyItem();
 $.writeln(myDataMergeTextPlaceholders_anyItem.length);
 
 var f = myDataMergeTextPlaceholders_anyItem;
