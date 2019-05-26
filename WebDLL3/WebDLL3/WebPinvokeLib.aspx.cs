@@ -16,11 +16,9 @@ namespace DemoApp.Model
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            LibWrap mcsh = new LibWrap();
-
             // array ByVal 
             int[] array1 = new int[10];
-            Response.Write("Integer array passed ByVal before call:" + "<br />");
+            Response.Write("Integer array passed ByVal before call: " + "<br />");
             for (int i = 0; i < array1.Length; i++)
             {
                 array1[i] = i;
@@ -28,8 +26,8 @@ namespace DemoApp.Model
             }
 
             int sum1 = LibWrap.TestArrayOfInts(array1, array1.Length);
-            Response.Write("<br />Sum of elements:" + sum1 + "<br />");
-            Response.Write("<br />Integer array passed ByVal after call:" + "<br />");
+            Response.Write("<br />Sum of elements: " + sum1 + "<br />");
+            Response.Write("<br />Integer array passed ByVal after call: " + "<br />");
 
             foreach (int i in array1)
             {
@@ -39,7 +37,7 @@ namespace DemoApp.Model
             // array ByRef 
             int[] array2 = new int[10];
             int size = array2.Length;
-            Response.Write("<br /><br />Integer array passed ByRef before call:" + "<br />");
+            Response.Write("<br /><br />Integer array passed ByRef before call: " + "<br />");
             for (int i = 0; i < array2.Length; i++)
             {
                 array2[i] = i;
@@ -50,13 +48,13 @@ namespace DemoApp.Model
             Marshal.Copy(array2, 0, buffer, array2.Length);
 
             int sum2 = LibWrap.TestRefArrayOfInts(ref buffer, ref size);
-            Response.Write("<br />Sum of elements:" + sum2 + "<br />");
+            Response.Write("<br />Sum of elements: " + sum2 + "<br />");
             if (size > 0)
             {
                 int[] arrayRes = new int[size];
                 Marshal.Copy(buffer, arrayRes, 0, size);
                 Marshal.FreeCoTaskMem(buffer);
-                Response.Write("<br />Integer array passed ByRef after call:" + "<br />");
+                Response.Write("<br />Integer array passed ByRef after call: " + "<br />");
                 foreach (int i in arrayRes)
                 {
                     Response.Write(" " + i);
@@ -64,14 +62,14 @@ namespace DemoApp.Model
             }
             else
             {
-                Response.Write("<br />Array after call is empty" + "<br />");
+                Response.Write("<br />Array after call is empty " + "<br />");
             }
 
             // matrix ByVal 
             const int DIM = 5;
             int[,] matrix = new int[DIM, DIM];
 
-            Response.Write("<br /><br />Matrix before call:" + "<br />");
+            Response.Write("<br /><br />Matrix before call: " + "<br />");
             for (int i = 0; i < DIM; i++)
             {
                 for (int j = 0; j < DIM; j++)
@@ -84,8 +82,8 @@ namespace DemoApp.Model
             }
 
             int sum3 = LibWrap.TestMatrixOfInts(matrix, DIM);
-            Response.Write("<br />Sum of elements:" + sum3 + "<br />");
-            Response.Write("<br />Matrix after call:" + "<br />");
+            Response.Write("<br />Sum of elements: " + sum3 + "<br />");
+            Response.Write("<br />Matrix after call: " + "<br />");
             for (int i = 0; i < DIM; i++)
             {
                 for (int j = 0; j < DIM; j++)
@@ -98,15 +96,15 @@ namespace DemoApp.Model
 
             // string array ByVal 
             string[] strArray = { "one", "two", "three", "four", "five" };
-            Response.Write("<br /><br />string array before call:" + "<br />");
+            Response.Write("<br /><br />string array before call: " + "<br />");
             foreach (string s in strArray)
             {
                 Response.Write(" " + s);
             }
 
             int lenSum = LibWrap.TestArrayOfStrings(strArray, strArray.Length);
-            Response.Write("<br />Sum of string lengths:" + lenSum + "<br />");
-            Response.Write("<br />string array after call:" + "<br />");
+            Response.Write("<br />Sum of string lengths: " + lenSum + "<br />");
+            Response.Write("<br />string array after call: " + "<br />");
             foreach (string s in strArray)
             {
                 Response.Write(" " + s);
@@ -114,20 +112,20 @@ namespace DemoApp.Model
 
             // struct array ByVal 
             MyPoint[] points = { new MyPoint(1, 1), new MyPoint(2, 2), new MyPoint(3, 3) };
-            Response.Write("<br /><br />Points array before call:" + "<br />");
+            Response.Write("<br /><br />Points array before call: " + "<br />");
             foreach (MyPoint p in points)
             {
                 // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated
-                Response.Write("X = " + p.X + ", Y = " + p.Y);
+                Response.Write("X = " + p.X + ", Y = " + p.Y + "; ");
                 // Console.WriteLine($"X = {p.X}, Y = {p.Y}");
             }
 
             int allSum = LibWrap.TestArrayOfStructs(points, points.Length);
-            Response.Write("<br />Sum of points:" + allSum + "<br />");
-            Response.Write("<br />Points array after call:" + "<br />");
+            Response.Write("<br />Sum of points: " + allSum + "<br />");
+            Response.Write("<br />Points array after call: " + "<br />");
             foreach (MyPoint p in points)
             {
-                Response.Write("X = " + p.X + ", Y = " + p.Y);
+                Response.Write("X = " + p.X + ", Y = " + p.Y + "; ");
             }
 
             // struct with strings array ByVal 
@@ -141,7 +139,7 @@ namespace DemoApp.Model
             Response.Write("<br /><br />Persons array before call:" + "<br />");
             foreach (MyPerson pe in persons)
             {
-                Response.Write("First = " + pe.First + ", Last = " + pe.Last);
+                Response.Write("First = " + pe.First + ", Last = " + pe.Last + "; ");
             }
 
             int namesSum = LibWrap.TestArrayOfStructs2(persons, persons.Length);
@@ -150,7 +148,7 @@ namespace DemoApp.Model
             foreach (MyPerson pe in persons)
             {
                 //Console.WriteLine($"First = {pe.First}, Last = {pe.Last}");
-                Response.Write("First = " + pe.First + ", Last = " + pe.Last);
+                Response.Write("First = " + pe.First + ", Last = " + pe.Last + "; ");
             }
         }
     }
