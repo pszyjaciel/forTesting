@@ -81,15 +81,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="PinvokeLib.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="PinvokeLib.h" />
     <ClInclude Include="Source.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\WebDLL3\WebDLL3.csproj">
-      <Project>{7214e813-161e-466b-8055-34d59986bab6}</Project>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using csDLL3;
 
+// shortcuts:  Tools / Options / Environment / Keyboard 
+
 
 namespace DemoApp.Model
 {
