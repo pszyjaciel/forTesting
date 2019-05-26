@@ -1,0 +1,110 @@
+git checkout --orphan latest_branch
+git add -A
+git commit -am "initial commit"
+git branch -D master
+git branch -m master
+git push -f origin master
+
+---------
+c:\!Lenovo\PortableGit\git-cmd.exe 
+cd ..
+mkdir Repos
+cd Repos
+git init
+git clone https://github.com/pszyjaciel/Projects.git
+git config --global user.email "pszyjaciel@interia.pl"
+git config --global user.name "Pszyjaciel"
+
+utworzyc plik: c:\!Lenovo\Repos\LICENSE 
+git add LICENSE
+git commit -m "initial project version"
+
+git remote add origin https://github.com/pszyjaciel/Projects.git
+# Sets the new remote
+
+git remote -v
+# Verifies the new remote URL
+
+git push origin master
+# Pushes the changes in your local repository up to the remote repository you specified as the origin
+
+login: c:\!Lenovo\github_login.png 
+
+uwaga niebezpieczne!
+git push -f origin master << skasowal calom zawartosc na github.com  bueeee!
+
+---------------------
+cd c:\!Lenovo\Repos\Projects
+git add *
+git commit -m "initial project version"
+git push origin master
+--------------------------
+nie umialem sciagnac Repo z githuba, wiec wykasowalem wszysko w Repos
+cd Repos
+c:\!Lenovo\PortableGit\git-cmd.exe 
+git init
+c:\!Lenovo\Repos>git clone https://github.com/pszyjaciel/Projects.git
+Cloning into 'Projects'...
+remote: Enumerating objects: 458, done.
+remote: Counting objects: 100% (458/458), done.
+remote: Compressing objects: 100% (324/324), done.
+remote: Total 952 (delta 260), reused 201 (delta 130), pack-reused 494R
+Receiving objects: 100% (952/952), 17.70 MiB | 6.75 MiB/s, done.
+Resolving deltas: 100% (398/398), done.
+Checking out files: 100% (792/792), done.
+
+---------------------
+cd c:\!Lenovo\Repos\
+git clone https://github.com/pszyjaciel/forTesting.git
+
+cd c:\!Lenovo\Repos\forTesting
+.. praca z plikiem README.md ...
+c:\!Lenovo\Repos\forTesting>git add .
+
+c:\!Lenovo\Repos\forTesting>git commit -m "maj komit2"
+[master 96602d2] maj komit2
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+c:\!Lenovo\Repos\forTesting>git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/pszyjaciel/forTesting.git
+   663fc9c..96602d2  master -> master
+
+jak cos nie tak:
+git reset --hard HEAD~1
+
+---------------
+-- klonuje do repos
+cd c:\!Lenovo\Repos\
+c:\!Lenovo\Repos>git clone https://github.com/pszyjaciel/vs2k8.git
+Cloning into 'vs2k8'...
+
+-- ale komity juz z katalogu vs2k8 (!)
+cd c:\!Lenovo\Repos\vs2k8 
+c:\!Lenovo\Repos\vs2k8>git add .
+
+c:\!Lenovo\Repos\vs2k8>git commit -m "komit1"
+[master (root-commit) 7dc6cc7] komit1
+ 1 file changed, 3 insertions(+)
+ create mode 100644 readme.rd
+
+c:\!Lenovo\Repos\vs2k8>git push
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 237 bytes | 237.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/pszyjaciel/vs2k8.git
+ * [new branch]      master -> master
+
+------------------------------
+C:\WINDOWS\system32>c:\!Lenovo\PortableGit\git-cmd.exe
+C:\WINDOWS\system32>cd c:\!Lenovo\Repos\forTesting
+c:\!Lenovo\Repos\forTesting>git pull
+Already up to date.
+
