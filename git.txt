@@ -104,7 +104,13 @@ To https://github.com/pszyjaciel/vs2k8.git
 
 ------------------------------
 C:\WINDOWS\system32>c:\!Lenovo\PortableGit\git-cmd.exe
+
+pull:
 C:\WINDOWS\system32>cd c:\!Lenovo\Repos\forTesting
 c:\!Lenovo\Repos\forTesting>git pull
 Already up to date.
 
+push:
+c:\!Lenovo\Repos\vs2k8>git add .
+c:\!Lenovo\Repos\vs2k8>git commit -m "komit1"
+c:\!Lenovo\Repos\vs2k8>git push
