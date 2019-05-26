@@ -118,6 +118,7 @@ namespace DemoApp.Model
             foreach (MyPoint p in points)
             {
                 // https://docs.microsoft.com/en-us/dotnet/csharp/language-reference/tokens/interpolated
+                Response.Write("X = " + p.X + ", Y = " + p.Y);
                 // Console.WriteLine($"X = {p.X}, Y = {p.Y}");
             }
 
@@ -126,7 +127,7 @@ namespace DemoApp.Model
             Response.Write("<br />Points array after call:" + "<br />");
             foreach (MyPoint p in points)
             {
-                //Console.WriteLine($"X = {p.X}, Y = {p.Y}");
+                Response.Write("X = " + p.X + ", Y = " + p.Y);
             }
 
             // struct with strings array ByVal 
@@ -140,7 +141,7 @@ namespace DemoApp.Model
             Response.Write("<br /><br />Persons array before call:" + "<br />");
             foreach (MyPerson pe in persons)
             {
-                //Console.WriteLine($"First = {pe.First}, Last = {pe.Last}");
+                Response.Write("First = " + pe.First + ", Last = " + pe.Last);
             }
 
             int namesSum = LibWrap.TestArrayOfStructs2(persons, persons.Length);
@@ -149,6 +150,7 @@ namespace DemoApp.Model
             foreach (MyPerson pe in persons)
             {
                 //Console.WriteLine($"First = {pe.First}, Last = {pe.Last}");
+                Response.Write("First = " + pe.First + ", Last = " + pe.Last);
             }
         }
     }

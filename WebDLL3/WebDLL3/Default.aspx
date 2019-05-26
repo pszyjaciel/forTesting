@@ -36,5 +36,8 @@
             <asp:Label ID="Label4" runat="server" Text="" CssClass="lbl4"></asp:Label>
         </div>
     </form>
+
+    <a href="WebPinvokeLib.aspx">WebPinvokeLib</a>
+
 </body>
 </html>
