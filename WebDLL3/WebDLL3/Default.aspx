@@ -17,6 +17,12 @@
             border: 1px, solid, green;
             padding: 0.5em;
         }
+
+        @media (max-width: 992px) {
+            body {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
