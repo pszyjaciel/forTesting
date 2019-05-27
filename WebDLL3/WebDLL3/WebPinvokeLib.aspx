@@ -10,6 +10,7 @@
         {
             width: 80%;
             margin: 0 auto;
+	    padding: 0.5em auto;
             font-family: Consolas, monospace;
             border: 1px solid #ccc;
         }

@@ -11,6 +11,7 @@
             width: 80%;
             margin: 1em auto 1em auto;
             font-family: Consolas, monospace;
+	    padding: 0.5em auto;
         }
 
         .lbl4 {
