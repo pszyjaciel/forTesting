@@ -13,6 +13,11 @@
             font-family: Consolas, monospace;
             border: 1px solid #ccc;
         }
+        @media (max-width: 992px) {
+            body {
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
