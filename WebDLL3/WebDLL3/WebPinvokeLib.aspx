@@ -10,12 +10,15 @@
         {
             width: 80%;
             margin: 0 auto;
-	    padding: 0.5em auto;
+            padding: 0.5em;
             font-family: Consolas, monospace;
             border: 1px solid #ccc;
         }
-        @media (max-width: 992px) {
-            body {
+
+        @media (max-width: 992px)
+        {
+            body
+            {
                 width: 100%;
             }
         }

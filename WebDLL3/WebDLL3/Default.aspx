@@ -7,20 +7,24 @@
     <title>Unmanaged DLL</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <style type="text/css">
-        body {
+        body
+        {
             width: 80%;
             margin: 1em auto 1em auto;
             font-family: Consolas, monospace;
-	    padding: 0.5em auto;
+            padding: 0.5em;
         }
 
-        .lbl4 {
+        .lbl4
+        {
             border: 1px, solid, green;
             padding: 0.5em;
         }
 
-        @media (max-width: 992px) {
-            body {
+        @media (max-width: 992px)
+        {
+            body
+            {
                 width: 100%;
             }
         }
