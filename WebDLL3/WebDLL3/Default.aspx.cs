@@ -8,6 +8,9 @@ using csDLL3;
 
 // shortcuts:  Tools / Options / Environment / Keyboard 
 
+// c:\!Lenovo\PortableGit\git-bash.exe c:\!Lenovo\PortableGit\mypull.sh 
+// c:\!Lenovo\PortableGit\git-bash.exe c:\!Lenovo\PortableGit\mypush.sh 
+
 
 namespace DemoApp.Model
 {
