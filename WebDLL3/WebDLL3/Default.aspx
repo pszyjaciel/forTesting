@@ -10,7 +10,7 @@
         body
         {
             width: 80%;
-            margin: 1em auto 1em auto;
+            margin: 0em auto 0em auto;
             font-family: Consolas, monospace;
             padding: 0.5em;
         }
